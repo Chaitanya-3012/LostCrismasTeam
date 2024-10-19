@@ -1,0 +1,43 @@
+package package7;
+import java.util.Vector;
+
+public class vectorClass {
+
+    public static void main(String[] args) {
+        // Create a vector of integers
+        Vector<Integer> vector = new Vector<>();
+
+        // Add elements to the vector
+        vector.addElement(10);
+        vector.addElement(20);
+        vector.addElement(30);
+        vector.addElement(40);
+        vector.addElement(50);
+
+        System.out.println("Initial Vector: " + vector);
+
+        System.out.println("Is vector empty? " + vector.isEmpty());
+
+        System.out.println("Vector size: " + vector.size());
+
+        System.out.println("Vector capacity: " + vector.capacity());
+
+        System.out.println("Does vector contain 30? " + vector.contains(30));
+
+        System.out.println("Element at index 2: " + vector.elementAt(2));
+
+        System.out.println("First element: " + vector.firstElement());
+
+        System.out.println("Last element: " + vector.lastElement());
+        vector.insertElementAt(25, 2);
+        System.out.println("Vector after inserting 25 at index 2: " + vector);
+
+        vector.removeElement(30);
+        System.out.println("Vector after removing 30: " + vector);
+
+        vector.removeAllElements();
+        System.out.println("Vector after removing all elements: " + vector);
+
+        System.out.println("Is vector empty after removing all elements? " + vector.isEmpty());
+    }
+}

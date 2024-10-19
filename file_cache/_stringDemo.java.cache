@@ -1,0 +1,76 @@
+package package6;
+public class stringDemo {
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        String str2 = "World";
+        String str3 = "HelloWorld";
+        String str4 = "   Hello World   ";
+        String str5 = "Hello";
+        String str6 = "hello";
+
+        // 1. length() method
+        System.out.println("Length of str1: " + str1.length());
+
+        // 2. toUpperCase() method
+        System.out.println("str1 in uppercase: " + str1.toUpperCase());
+
+        // 3. toLowerCase() method
+        System.out.println("str1 in lowercase: " + str1.toLowerCase());
+
+        // 4. concat() method
+        System.out.println("str1 + str2: " + str1.concat(str2));
+
+        // 5. equals() method
+        System.out.println("str1 equals str5: " + str1.equals(str5));
+
+        // 6. equalsIgnoreCase() method
+        System.out.println("str1 equalsIgnoreCase str6: " + str1.equalsIgnoreCase(str6));
+
+        // 7. compareTo() method
+        System.out.println("str1 compareTo str2: " + str1.compareTo(str2));
+
+        // 8. compareToIgnoreCase() method
+        System.out.println("str1 compareToIgnoreCase str6: " + str1.compareToIgnoreCase(str6));
+
+        // 9. substring() method
+        System.out.println("str3 substring from index 5: " + str3.substring(5));
+
+        // 10. substring() method with two parameters
+        System.out.println("str3 substring from index 0 to 5: " + str3.substring(0, 5));
+
+        // 11. trim() method
+        System.out.println("str4 after trimming: " + str4.trim());
+
+        // 12. charAt() method
+        System.out.println("Character at index 0 in str1: " + str1.charAt(0));
+
+        // 13. indexOf() method
+        System.out.println("Index of 'o' in str1: " + str1.indexOf('o'));
+
+        // 14. lastIndexOf() method
+        System.out.println("Last index of 'o' in str1: " + str1.lastIndexOf('o'));
+
+        // 15. startsWith() method
+        System.out.println("str1 starts with 'He': " + str1.startsWith("He"));
+
+        // 16. endsWith() method
+        System.out.println("str1 ends with 'lo': " + str1.endsWith("lo"));
+
+        // 17. contains() method (Java 1.5 and later)
+        System.out.println("str1 contains 'ell': " + str1.contains("ell"));
+
+        // 18. replace() method
+        System.out.println("str1 after replacing 'H' with 'h': " + str1.replace('H', 'h'));
+
+        // 19. split() method
+        String[] words = str4.trim().split(" ");
+        System.out.println("Words in str4: ");
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+        // 20. join() method (Java 1.8 and later)
+        String joined = String.join(", ", words);
+        System.out.println("Joined words: " + joined);
+    }
+}

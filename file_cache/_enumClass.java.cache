@@ -1,0 +1,34 @@
+package package7;
+public class enumClass {
+
+    // Define an enum for colors
+    public enum Color {
+        RED, GREEN, BLUE, YELLOW, BLACK, WHITE
+    }
+
+    public static void main(String[] args) {
+        // Use the enum
+        Color myColor = Color.GREEN;
+
+        switch (myColor) {
+            case RED:
+                System.out.println("The color is red");
+                break;
+            case GREEN:
+                System.out.println("The color is green");
+                break;
+            case BLUE:
+                System.out.println("The color is blue");
+                break;
+            case YELLOW:
+                System.out.println("The color is yellow");
+                break;
+            case BLACK:
+                System.out.println("The color is black");
+                break;
+            case WHITE:
+                System.out.println("The color is white");
+                break;
+        }
+    }
+}

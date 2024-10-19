@@ -1,0 +1,72 @@
+package package6;
+public class stringBufferDemo {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Hello");
+
+        // 1. append() method
+        sb.append(" World");
+        System.out.println("After append: " + sb);
+
+        // 2. insert() method
+        sb.insert(6, "Java");
+        System.out.println("After insert: " + sb);
+
+        // 3. replace() method
+        sb.replace(6, 10, "Python");
+        System.out.println("After replace: " + sb);
+
+        // 4. delete() method
+        sb.delete(6, 12);
+        System.out.println("After delete: " + sb);
+
+        // 5. deleteCharAt() method
+        sb.deleteCharAt(5);
+        System.out.println("After deleteCharAt: " + sb);
+
+        // 6. reverse() method
+        sb.reverse();
+        System.out.println("After reverse: " + sb);
+
+        // 7. toString() method
+        String str = sb.toString();
+        System.out.println("After toString: " + str);
+
+        // 8. length() method
+        System.out.println("Length: " + sb.length());
+
+        // 9. capacity() method
+        System.out.println("Capacity: " + sb.capacity());
+
+        // 10. ensureCapacity() method
+        sb.ensureCapacity(20);
+        System.out.println("After ensureCapacity: " + sb.capacity());
+
+        // 11. setLength() method
+        sb.setLength(10);
+        System.out.println("After setLength: " + sb);
+
+        // 12. charAt() method
+        System.out.println("Char at index 0: " + sb.charAt(0));
+
+        // 13. setCharAt() method
+        sb.setCharAt(0, 'J');
+        System.out.println("After setCharAt: " + sb);
+
+        // 14. getChars() method
+        char[] chars = new char[10];
+        sb.getChars(0, 10, chars, 0);
+        System.out.println("Chars: " + new String(chars));
+
+        // 15. indexOf() method
+        System.out.println("Index of 'o': " + sb.indexOf("o"));
+
+        // 16. lastIndexOf() method
+        System.out.println("Last index of 'o': " + sb.lastIndexOf("o"));
+
+        // 17. substring() method
+        System.out.println("Substring from index 5: " + sb.substring(5));
+
+        // 18. subSequence() method
+        System.out.println("Subsequence from index 5 to 10: " + sb.subSequence(5, 10));
+    }
+}

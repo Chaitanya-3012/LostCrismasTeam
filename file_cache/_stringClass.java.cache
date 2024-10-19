@@ -1,0 +1,29 @@
+package package6;
+public class stringClass {
+
+    public static void main(String[] args) {
+        // Using String class
+        String str = "Hello";
+        System.out.println("Original String: " + str);
+
+        // Creating a new string by concatenating
+        str = str + " World";
+        System.out.println("After concatenation: " + str);
+
+        // Using StringBuffer class
+        StringBuffer sb = new StringBuffer("Hello");
+        System.out.println("Original StringBuffer: " + sb);
+
+        // Appending to the StringBuffer
+        sb.append(" World");
+        System.out.println("After appending: " + sb);
+
+        // Inserting into the StringBuffer
+        sb.insert(5, " Beautiful");
+        System.out.println("After inserting: " + sb);
+
+        // Reversing the StringBuffer
+        sb.reverse();
+        System.out.println("After reversing: " + sb);
+    }
+}

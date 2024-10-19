@@ -1,0 +1,34 @@
+package package7;
+
+public class WrapperClass {
+    public static void main(String[] args) {
+        // Integer wrapper
+        Integer intObj = Integer.valueOf(100);
+        System.out.println("Integer object: " + intObj);    
+        // Converting Integer to int (unboxing)
+        int intValue = intObj.intValue();
+        System.out.println("int value: " + intValue);
+        // Double wrapper
+        Double doubleObj = Double.valueOf(3.14159);
+        System.out.println("Double object: " + doubleObj);
+        // Boolean wrapper
+        Boolean boolObj = Boolean.valueOf(true);
+        System.out.println("Boolean object: " + boolObj);
+        // Character wrapper
+        Character charObj = Character.valueOf('A');
+        System.out.println("Character object: " + charObj);
+        // Parsing string to wrapper
+        int parsedInt = Integer.parseInt("200");
+        System.out.println("Parsed int: " + parsedInt);
+        double parsedDouble = Double.parseDouble("2.718");
+        System.out.println("Parsed double: " + parsedDouble);
+        Integer autoBoxed = 500; // Automatically boxes int to Integer
+        System.out.println("Auto-boxed Integer: " + autoBoxed);
+        int unboxed = autoBoxed; // Automatically unboxes Integer to int
+        System.out.println("Auto-unboxed int: " + unboxed);
+        // Using methods of wrapper classes
+        System.out.println("Max value of Integer: " + Integer.MAX_VALUE);
+        System.out.println("Min value of Double: " + Double.MIN_VALUE);
+        System.out.println("Binary string of 10: " + Integer.toBinaryString(10));
+    }
+}

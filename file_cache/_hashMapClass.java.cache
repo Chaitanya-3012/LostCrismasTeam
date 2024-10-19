@@ -1,0 +1,29 @@
+package package7;
+import java.util.HashMap;
+
+public class hashMapClass {
+
+    public static void main(String[] args) {
+        // Created a HashMap
+        HashMap<String, Integer> weekDays = new HashMap<>();
+
+        // Add elements to the HashMap
+        weekDays.put("Monday", 1);
+        weekDays.put("Tuesday", 2);
+        weekDays.put("Wednesday", 3);
+        weekDays.put("Thursday", 4);
+        // Not added Friday Initially
+        weekDays.put("Saturday", 6);
+        weekDays.put("Sunday", 7);
+
+        System.out.println("Week Days: " + weekDays);
+
+        System.out.println("Day number of Wednesday: " + weekDays.get("Wednesday"));
+
+        weekDays.put("Friday", 5);
+        System.out.println("Updated Week Days: " + weekDays);
+
+        weekDays.remove("Sunday");
+        System.out.println("Week Days after removing Sunday: " + weekDays);
+    }
+}
